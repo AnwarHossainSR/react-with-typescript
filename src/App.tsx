@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import AddToList from "./components/AddToList";
 import List from "./components/List";
 
 export interface IState {
@@ -21,13 +22,14 @@ function App() {
     {
       name: "Kobe Bryant",
       age: 42,
-      img: "https://fullpresscoverage.com/wp-content/uploads/2020/01/101524695-457220551.jpg",
+      img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
     },
   ]);
   return (
     <div className="App">
       <h1>People Invited to my Party</h1>
       <List people={people} />
+      <AddToList setPeople={setPeople} people={people} />
     </div>
   );
 }
