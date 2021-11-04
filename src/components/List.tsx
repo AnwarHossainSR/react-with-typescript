@@ -1,9 +1,9 @@
 import React from "react";
-import { IState as Props } from "../App";
+import { IState as IProps } from "../App";
 
-interface IProps {
-  people: Props["people"];
-}
+// interface IProps {
+//   people: Props["people"];
+// }
 
 const List: React.FC<IProps> = ({ people }) => {
   const renderList = (): JSX.Element[] => {
